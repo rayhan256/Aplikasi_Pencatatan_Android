@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20sp"
+    tools:context=".InputData">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Input Data"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textViewKode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kode (000) :"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
+    <EditText
+        android:id="@+id/editTextKode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewKode"
+        android:inputType="text"
+        android:maxLength="10" />
+    <TextView
+        android:id="@+id/textViewNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama Produk :"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextKode" />
+    <EditText
+        android:id="@+id/editTextNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewNama"
+        android:inputType="text"
+        android:maxLength="100" />
+    <TextView
+        android:id="@+id/textViewHarga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Harga (Rp.) :"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextNama" />
+    <EditText
+        android:id="@+id/editTextHarga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewHarga"
+        android:inputType="number"
+        android:maxLength="10" />
+    <TextView
+        android:id="@+id/textViewBerat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Berat (gram) :"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextHarga" />
+    <EditText
+        android:id="@+id/editTextBerat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewBerat"
+        android:inputType="number"
+        android:maxLength="10" />
+    <TextView
+        android:id="@+id/textViewStok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stok :"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextBerat" />
+    <EditText
+        android:id="@+id/editTextStok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewStok"
+        android:inputType="number"
+        android:maxLength="10" />
+    <Button
+        android:id="@+id/buttonSimpan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Simpan"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextStok" />
+</androidx.constraintlayout.widget.ConstraintLayout>
